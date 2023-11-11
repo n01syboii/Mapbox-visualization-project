@@ -33,7 +33,6 @@ fetch("Data.json")
         var count = 0;
         let markerCoords = {};
 
-        
         geoNotesList.forEach((markerData) => {
           const el = document.createElement("div");
           el.className = "marker";

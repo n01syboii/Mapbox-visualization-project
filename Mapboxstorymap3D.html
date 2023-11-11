@@ -1,39 +1,44 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
     <title>Display buildings in 3D</title>
+    <!-- Ensure proper rendering and touch zooming on mobile devices -->
     <meta
       name="viewport"
-      content="initial-scale=1,maximum-scale=1,user-scalable=no"
+      content="initial-scale=1, maximum-scale=1, user-scalable=no"
     />
+    <!-- Google Icons for enhanced visual elements -->
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
-    <link rel="stylesheet" href=/your_styles.css />
+    <!-- External stylesheet link for custom styles -->
+    <link rel="stylesheet" href="/your_styles.css" />
+    <!-- Mapbox GL JS library for rendering interactive maps -->
     <script src="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.js"></script>
   </head>
 
-  <nav id="navBar">
-    <h2>
-      QualNotes<span class="material-symbols-outlined"> note_stack </span>
-    </h2>
-  </nav>
-
   <body>
-    <!-- This is where your sidecar elements goes -->
+    <!-- Navigation bar for the application -->
+    <nav id="navBar">
+      <h2>
+        QualNotes<span class="material-symbols-outlined">note_stack</span>
+      </h2>
+    </nav>
+
+    <!-- Sidecar for notes beside the map -->
     <div id="sidecar">
       <section class="hidden" id="startPage">
         <h2>
-          QualNotes<span class="material-symbols-outlined"> note_stack </span>
+          QualNotes<span class="material-symbols-outlined">note_stack</span>
         </h2>
       </section>
-      <!-- This is where your map goes -->
+      <!-- Container for the Mapbox map -->
       <div id="map"></div>
     </div>
 
-    <!-- Leaflet JavaScript -->
+    <!-- Custom JavaScript for the Mapbox implementation -->
     <script src="myStoryMap3D.js"></script>
   </body>
 </html>

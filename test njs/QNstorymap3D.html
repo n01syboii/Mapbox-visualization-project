@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Display buildings in 3D</title>
+<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+<link href="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.css" rel="stylesheet">
+<script src="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.js"></script>
+<style>
+
+.marker {
+    background-image: url('./marker-icon-2x.png');
+    background-size: cover;
+    width: 31px;  /* Adjust width and height to your preference */
+    height: 50px;
+    cursor: pointer;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+#map {
+    width: 100%;  /* Adjust as needed */
+    height: 100vh;
+    float: left;
+}
+#sidecar {
+    width: 40%;  /* Adjust as needed */
+    height: 100vh;
+    float: left;
+    overflow-y: scroll; /* To allow scrolling if content is long */
+    background-color: #f4f4f4; /* Just for visual distinction, adjust as needed */
+}
+
+
+
+</style>
+</head>
+<body>
+    
+    <div id="map"></div>
+        <div id="sidecar">
+        <!-- This will be populated with your notes and images -->
+    </div>
+
+    <!-- Leaflet JavaScript -->
+    <script src="myStoryMap3D.js"></script>
+
+
+</body>
+</html>
+

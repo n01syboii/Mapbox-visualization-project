@@ -1,4 +1,4 @@
-# QualNotes Visualization Projects
+# Mapbox Visualization Projects
 
 This repository contains the code for visualizing geographic data annotations in both 2D and 3D formats. The 2D visualization is implemented using Python and Leaflet.js, while the 3D visualization uses Mapbox GL JS.
 
